@@ -156,9 +156,9 @@ button.btn.submit-btn {
     padding: 10px 70px;
 }
 .title-text {
-    font-size: 3em;
-    font-weight: 700;
-    color: #505050;
+  font-size: 2em;
+  font-weight: 800;
+  color: #505050;
 }
 .bg-blue{ background:#E5F3FE;}
 
@@ -183,10 +183,40 @@ button.btn.submit-btn {
     font-weight: 800;
 }
 
+header.masthead.all-cover {
+  padding-top: 10rem;
+  padding-bottom: 3em;
+  background: url(assets/all-cover.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.text-blue{color:#4B0089;}
+
+.upload-cv label {
+  background: #F0F0F0;
+  border-radius: 2em;
+  border: 0;
+  height: 3em;
+}
+.upload-cv .custom-file-input:lang(en)~.custom-file-label::after {
+  content: "Browse";
+  background: #4B0089;
+  color: #fff;
+  height: 3em;
+  border-radius: 8px;
+  line-height: 2.3;
+}
+
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 #admission h2 {font-size: 2em;}
 header.masthead { padding-top: 8rem;padding-bottom: 0;text-align: center;}
+header.masthead.all-cover {padding-top: 8rem;}
 header.masthead h1 { font-size: 1.3rem;}
 .title-text {font-size: 2em;}
 #features p.card-title {font-size: 1.2em;}
@@ -197,6 +227,11 @@ header.masthead h1 { font-size: 1.3rem;}
 #no-limit .icon img, #sports .icon img { width: 60px;}
 #form-view .card-header h6 {font-size: 1.3em;}
 .accordion .card-header h2 button {font-size: 14px;}
+h1.sub-title {font-size: 1.4em;}
+.card-text {font-size: 1.2em;}
+.educators p {font-size: 1.1em;}
+.submit-cv h4, .submit-cv p, .submit-cv h5 {font-size: 1em;}
+
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
