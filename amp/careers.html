@@ -682,10 +682,12 @@ header.masthead h1{font-size:2.4rem;}
     <div class="row text-center align-self-start justify-content-center">
     <div class="col-lg-7">
       <div class="mt-4">
-        <form method="post" action="/documentation/examples/api/submit-form-xhr" target="_top" class="upload-cv">
+        <form  method="post" action-xhr="/form/json/upload" enctype="multipart/form-data" target="_blank" class="upload-cv">
           <div class="custom-file">
-            <input type="file" class="custom-file-input form-control-lg" id="customFile">
+            <input type="file" class="custom-file-input form-control-lg"  name="myFile" accept="text/plain">
             <label class="custom-file-label" for="customFile">Choose file</label>
+            <div submit-success><template type="amp-mustache">Way to go 🎉 {{message}}</template></div>
+           <div submit-error>Way to fail</div>
           </div>
         </form>
       </div>
