@@ -221,7 +221,7 @@ h1{font-size:2.5rem;}
 .close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
 .close:hover{color:#000;text-decoration:none;}
 button.close{padding:0;background-color:transparent;border:0;}
-.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0;}
+.modal{position:fixed;top:0;left:0;z-index:1050;width:100%;height:100%;overflow:hidden;outline:0;}
 .modal-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;}
 .modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-50px);transform:translate(0,-50px);}
 @media (prefers-reduced-motion:reduce){
@@ -440,6 +440,29 @@ amp-accordion.hidden-header section[expanded] h4 {
     top: 15px;
 }
 
+
+#header-sidebar nav ul .drop-list {
+    margin-top: 5px;
+}
+#header-sidebar nav ul li.drop-list {
+    padding: 10px 24px 10px 20px;
+} 
+.start-drop>section>header:after {
+    display: inline-block;
+    content: "+";
+    padding: 0 0 0 1.5rem;
+    color: #003f93;
+}
+.start-drop>[expanded]>header:after {
+    content: "–";
+}
+.drop-head {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+
 .scrollToTop { color: #fff; font-size: 1.8em; box-shadow: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12); width: 50px; height: 50px; border-radius: 15%; border: none; outline: none; background: #fca509; z-index: 999; bottom: 10px; right: 25px; position: fixed; opacity: 0; visibility: hidden; }
 
 @media (max-width: 575.98px){
@@ -573,10 +596,10 @@ header.masthead h1{font-size:2.4rem;}
                 <li class="ampstart-nav-item"><a class="ampstart-nav-link" href="./about.html">About Us</a></li>
                 <li class="ampstart-nav-item">
                   <!-- Start Dropdown-inline -->
-                  <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                  <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown start-drop">
                     <section>
-                      <header>Our Curriculum</header>
-                      <ul class="ampstart-dropdown-items list-reset m0 p0">
+                      <header class="drop-head">Our Curriculum</header>
+                      <ul class="ampstart-dropdown-items list-reset m0 p0 drop-list">
                           <li class="ampstart-dropdown-item"><a href="./curriculum.html" class="text-decoration-none">Curriculum</a></li>
                           <li class="ampstart-dropdown-item"><a href="./affiliation.html" class="text-decoration-none">Affiliation</a></li>
                           <li class="ampstart-dropdown-item"><a href="./assessment.html" class="text-decoration-none">Assessment</a></li>
@@ -586,10 +609,10 @@ header.masthead h1{font-size:2.4rem;}
                 </li>
                 <li class="ampstart-nav-item">
                   <!-- Start Dropdown-inline -->
-                  <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                  <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown start-drop">
                     <section>
-                      <header>Facilities</header>
-                      <ul class="ampstart-dropdown-items list-reset m0 p0">
+                      <header class="drop-head">Facilities</header>
+                      <ul class="ampstart-dropdown-items list-reset m0 p0 drop-list">
                           <li class="ampstart-dropdown-item"><a href="./facilities.html" class="text-decoration-none">Facilities</a></li>
                           <li class="ampstart-dropdown-item"><a href="./nutrition.html" class="text-decoration-none">Nutrition</a></li>
                           <li class="ampstart-dropdown-item"><a href="./infirmary.html" class="text-decoration-none">Infirmary</a></li>
